@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Discover amazing destinations, explore travel packages, read travel stories, and plan your next unforgettable journey with Travelia.">
+    <title>Travelia | Explore Destinations & Travel Packages</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Images/favicon/favicon-96x96.png?v=2" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="Images/favicon/favicon.svg?v=2" />
+    <link rel="shortcut icon" href="Images/favicon/favicon.ico?v=2" />
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png?v=2" />
+    <link rel="manifest" href="Images/favicon/site.webmanifest?v=2" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="position-absolute top-0 start-0 end-0 z-3">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-4" href="#">TRAVELIA</a>
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#traveliaNav" aria-controls="traveliaNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="traveliaNav">
+                    <ul class="navbar-nav ms-auto gap-lg-3 text-center">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#explore">Explore</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#stories">Stories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="position-relative min-vh-100 overflow-hidden">
+
+            <!-- Hero Carousel -->
+            <div id="carouselExampleCaptions"
+                class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel"
+                data-bs-interval="4000" data-bs-pause="false">
+
+                <div class="carousel-inner h-100">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active h-100">
+                        <img src="Images/hero-bg.png" class="d-block w-100 h-100 object-fit-cover"
+                            alt="Travel destination">
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item h-100">
+                        <img src="Images/hero-bg2.png" class="d-block w-100 h-100 object-fit-cover"
+                            alt="Travel destination">
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item h-100">
+                        <img src="Images/hero-bg3.png" class="d-block w-100 h-100 object-fit-cover"
+                            alt="Travel destination">
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-item h-100">
+                        <img src="Images/hero-bg4.png" class="d-block w-100 h-100 object-fit-cover"
+                            alt="Travel destination">
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="carousel-item h-100">
+                        <img src="Images/hero-bg5.png" class="d-block w-100 h-100 object-fit-cover"
+                            alt="Travel destination">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Search Box -->
+            <div class="position-absolute start-50 translate-middle-x
+                w-100 px-3 z-3" style="top: 65%;">
+
+                <div class="container">
+
+                    <div class="bg-white rounded-4 shadow p-2">
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5
+                            g-0 align-items-center">
+
+                            <div class="col px-3 py-2 border-bottom">
+                                <div class="fw-semibold small">
+                                    Location
+                                </div>
+                                <small class="text-secondary">
+                                    Add destination
+                                </small>
+                            </div>
+
+                            <div class="col px-3 py-2 border-bottom">
+                                <div class="fw-semibold small">
+                                    Check in
+                                </div>
+                                <small class="text-secondary">
+                                    Add dates
+                                </small>
+                            </div>
+
+                            <div class="col px-3 py-2 border-bottom">
+                                <div class="fw-semibold small">
+                                    Check out
+                                </div>
+                                <small class="text-secondary">
+                                    Add dates
+                                </small>
+                            </div>
+
+                            <div class="col px-3 py-2 border-bottom">
+                                <div class="fw-semibold small">
+                                    Guests
+                                </div>
+                                <small class="text-secondary">
+                                    Add guests
+                                </small>
+                            </div>
+
+                            <div class="col d-flex justify-content-center p-2">
+                                <button class="btn btn-primary rounded-circle p-3" aria-label="Search">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- <section class="position-relative min-vh-100 d-flex align-items-center overflow-hidden">
+            <img src="Images/hero-bg.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+                alt="Travel destination placeholder">
+
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+
+            Search box
+            <div class="position-absolute top-50 start-50 translate-middle w-100 px-3 z-3 mt-4">
+                <div class="container">
+                    <div class="bg-white rounded-4 shadow p-2">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-0 align-items-center">
+
+                            <div class="col px-3 py-2 border-bottom border-lg-0 border-end-lg">
+                                <div class="fw-semibold small">Location</div>
+                                <small class="text-secondary">Add destination</small>
+                            </div>
+
+                            <div class="col px-3 py-2 border-bottom border-lg-0 border-end-lg">
+                                <div class="fw-semibold small">Check in</div>
+                                <small class="text-secondary">Add dates</small>
+                            </div>
+
+                            <div class="col px-3 py-2 border-bottom border-lg-0 border-end-lg">
+                                <div class="fw-semibold small">Check out</div>
+                                <small class="text-secondary">Add dates</small>
+                            </div>
+
+                            <div class="col px-3 py-2 border-bottom border-lg-0 border-end-lg">
+                                <div class="fw-semibold small">Guests</div>
+                                <small class="text-secondary">Add guests</small>
+                            </div>
+
+                            <div class="col d-flex justify-content-center p-2">
+                                <button class="btn btn-primary rounded-circle p-3" aria-label="Search">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- ==================== WHY CHOOSE US ==================== -->
+        <section class="py-5  text-white" id="about">
+            <div class="container py-lg-5">
+                <div class="text-center mb-5">
+                    <p class="text-primary fw-semibold mb-2">WHY CHOOSE US?</p>
+                    <h2 class="fw-bold">Travel made simple</h2>
+                </div>
+
+                <div class="row g-4 text-center">
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 h-100">
+                            <div class="bg-white text-primary rounded-3 d-inline-flex p-3 mb-3">
+                                <i class="bi bi-currency-dollar fs-4"></i>
+                            </div>
+                            <h5>Best Price</h5>
+                            <p class="text-secondary mb-0">
+                                Find great travel options with prices that fit your journey.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 h-100">
+                            <div class="bg-white text-primary rounded-3 d-inline-flex p-3 mb-3">
+                                <i class="bi bi-shield-check fs-4"></i>
+                            </div>
+                            <h5>Trusted Service</h5>
+                            <p class="text-secondary mb-0">
+                                Plan your trip with reliable information and simple tools.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 h-100">
+                            <div class="bg-white text-primary rounded-3 d-inline-flex p-3 mb-3">
+                                <i class="bi bi-globe2 fs-4"></i>
+                            </div>
+                            <h5>Worldwide Places</h5>
+                            <p class="text-secondary mb-0">
+                                Explore destinations and experiences from around the world.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partners -->
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6
+            g-4 align-items-center justify-content-center
+            mt-4 pt-4 border-top border-secondary">
+
+                    <div class="col text-center text-secondary fw-semibold">GoTravel</div>
+                    <div class="col text-center text-secondary fw-semibold">TravelPro</div>
+                    <div class="col text-center text-secondary fw-semibold">Holiday</div>
+                    <div class="col text-center text-secondary fw-semibold">AirWay</div>
+                    <div class="col text-center text-secondary fw-semibold">The North</div>
+                    <div class="col text-center text-secondary fw-semibold">TravelHub</div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TOP BOOK NOW ==================== -->
+        <section class="py-5  text-white" id="packages">
+            <div class="container py-lg-4">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <div>
+                        <p class="text-primary fw-semibold mb-2">POPULAR STAYS</p>
+                        <h2 class="fw-bold mb-0">Top Book Now</h2>
+                    </div>
+                    <a href="#" class="btn btn-outline-light rounded-pill d-none d-sm-inline-block">
+                        See all
+                    </a>
+                </div>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card text-white border-secondary h-100 rounded-4 overflow-hidden">
+                            <img src="https://picsum.photos/seed/travelia-card1/700/500"
+                                class="card-img-top object-fit-cover" style="height: 190px;"
+                                alt="Travel stay placeholder">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="card-title">Azure Haven</h6>
+                                    <span class="badge text-bg-warning">4.9</span>
+                                </div>
+                                <p class="card-text text-secondary small">
+                                    <i class="bi bi-geo-alt"></i> Maldives
+                                </p>
+                                <strong>$240 <small class="text-secondary fw-normal">/ night</small></strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card  text-white border-secondary h-100 rounded-4 overflow-hidden">
+                            <img src="https://picsum.photos/seed/travelia-card2/700/500"
+                                class="card-img-top object-fit-cover" style="height: 190px;"
+                                alt="Travel stay placeholder">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="card-title">Palm Residence</h6>
+                                    <span class="badge text-bg-warning">4.8</span>
+                                </div>
+                                <p class="card-text text-secondary small">
+                                    <i class="bi bi-geo-alt"></i> Bali
+                                </p>
+                                <strong>$185 <small class="text-secondary fw-normal">/ night</small></strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card  text-white border-secondary h-100 rounded-4 overflow-hidden">
+                            <img src="https://picsum.photos/seed/travelia-card3/700/500"
+                                class="card-img-top object-fit-cover" style="height: 190px;"
+                                alt="Travel stay placeholder">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="card-title">Ocean Villa</h6>
+                                    <span class="badge text-bg-warning">4.9</span>
+                                </div>
+                                <p class="card-text text-secondary small">
+                                    <i class="bi bi-geo-alt"></i> Phuket
+                                </p>
+                                <strong>$210 <small class="text-secondary fw-normal">/ night</small></strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card  text-white border-secondary h-100 rounded-4 overflow-hidden">
+                            <img src="https://picsum.photos/seed/travelia-card4/700/500"
+                                class="card-img-top object-fit-cover" style="height: 190px;"
+                                alt="Travel stay placeholder">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="card-title">Blue Lagoon</h6>
+                                    <span class="badge text-bg-warning">4.7</span>
+                                </div>
+                                <p class="card-text text-secondary small">
+                                    <i class="bi bi-geo-alt"></i> Seychelles
+                                </p>
+                                <strong>$270 <small class="text-secondary fw-normal">/ night</small></strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card  text-white border-secondary h-100 rounded-4 overflow-hidden">
+                            <img src="https://picsum.photos/seed/travelia-card5/700/500"
+                                class="card-img-top object-fit-cover" style="height: 190px;"
+                                alt="Travel stay placeholder">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="card-title">Tropical House</h6>
+                                    <span class="badge text-bg-warning">4.8</span>
+                                </div>
+                                <p class="card-text text-secondary small">
+                                    <i class="bi bi-geo-alt"></i> Sri Lanka
+                                </p>
+                                <strong>$160 <small class="text-secondary fw-normal">/ night</small></strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card  text-white border-secondary h-100 rounded-4 overflow-hidden">
+                            <img src="https://picsum.photos/seed/travelia-card6/700/500"
+                                class="card-img-top object-fit-cover" style="height: 190px;"
+                                alt="Travel stay placeholder">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="card-title">Garden Villa</h6>
+                                    <span class="badge text-bg-warning">4.6</span>
+                                </div>
+                                <p class="card-text text-secondary small">
+                                    <i class="bi bi-geo-alt"></i> Thailand
+                                </p>
+                                <strong>$195 <small class="text-secondary fw-normal">/ night</small></strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card  text-white border-secondary h-100 rounded-4 overflow-hidden">
+                            <img src="https://picsum.photos/seed/travelia-card7/700/500"
+                                class="card-img-top object-fit-cover" style="height: 190px;"
+                                alt="Travel stay placeholder">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="card-title">Modern Escape</h6>
+                                    <span class="badge text-bg-warning">4.9</span>
+                                </div>
+                                <p class="card-text text-secondary small">
+                                    <i class="bi bi-geo-alt"></i> Dubai
+                                </p>
+                                <strong>$220 <small class="text-secondary fw-normal">/ night</small></strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card  text-white border-secondary h-100 rounded-4 overflow-hidden">
+                            <img src="https://picsum.photos/seed/travelia-card8/700/500"
+                                class="card-img-top object-fit-cover" style="height: 190px;"
+                                alt="Travel stay placeholder">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="card-title">Island Retreat</h6>
+                                    <span class="badge text-bg-warning">4.8</span>
+                                </div>
+                                <p class="card-text text-secondary small">
+                                    <i class="bi bi-geo-alt"></i> Mauritius
+                                </p>
+                                <strong>$250 <small class="text-secondary fw-normal">/ night</small></strong>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="#" class="btn btn-outline-light rounded-pill px-4">See all <i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== EXPLORE ==================== -->
+        <section class="position-relative py-5 overflow-hidden" id="explore">
+            <img src="https://picsum.photos/seed/travelia-explore/1600/900"
+                class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Destination placeholder">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75"></div>
+
+            <div class="container position-relative text-white py-lg-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-6">
+                        <p class="text-info fw-semibold">DISCOVER YOUR NEXT TRIP</p>
+                        <h2 class="display-4 fw-bold">Explore Maldives</h2>
+                        <hr class="border-light">
+                        <p class="text-light">
+                            Discover tropical islands, peaceful beaches and unforgettable
+                            experiences for your next adventure.
+                        </p>
+                        <a href="#" class="btn btn-light rounded-pill px-4">
+                            See all <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="row row-cols-3 g-2">
+                            <div class="col">
+                                <img src="https://picsum.photos/seed/maldives1/500/650"
+                                    class="img-fluid rounded-3 object-fit-cover w-100" style="height: 190px;"
+                                    alt="Destination placeholder">
+                                <small class="d-block text-center mt-2">Azure Haven</small>
+                            </div>
+                            <div class="col">
+                                <img src="https://picsum.photos/seed/maldives2/500/650"
+                                    class="img-fluid rounded-3 object-fit-cover w-100" style="height: 190px;"
+                                    alt="Destination placeholder">
+                                <small class="d-block text-center mt-2">Serene Sanctuary</small>
+                            </div>
+                            <div class="col">
+                                <img src="https://picsum.photos/seed/maldives3/500/650"
+                                    class="img-fluid rounded-3 object-fit-cover w-100" style="height: 190px;"
+                                    alt="Destination placeholder">
+                                <small class="d-block text-center mt-2">Verdant Vista</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FEATURE NEWS ==================== -->
+        <section class="py-5 bg-body-tertiary" id="stories">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <p class="text-primary fw-semibold mb-1">TRAVEL STORIES</p>
+                        <h2 class="fw-bold mb-0">Feature News</h2>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-outline-secondary"><i class="bi bi-chevron-left"></i></button>
+                        <button class="btn btn-outline-secondary"><i class="bi bi-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <article class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                            <img src="https://picsum.photos/seed/news1/800/550" class="card-img-top object-fit-cover"
+                                style="height: 210px;" alt="Travel story placeholder">
+                            <div class="card-body p-4">
+                                <small class="text-secondary"><i class="bi bi-calendar3"></i> February 20,
+                                    2026</small>
+                                <h5 class="fw-bold mt-2">Delicious restaurant at Hanal Bay</h5>
+                                <p class="text-secondary small">Discover food, places and experiences worth adding
+                                    to
+                                    your journey.</p>
+                                <a href="#" class="text-primary text-decoration-none small fw-semibold">See more <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                            <img src="https://picsum.photos/seed/news2/800/550" class="card-img-top object-fit-cover"
+                                style="height: 210px;" alt="Travel story placeholder">
+                            <div class="card-body p-4">
+                                <small class="text-secondary"><i class="bi bi-calendar3"></i> February 20,
+                                    2026</small>
+                                <h5 class="fw-bold mt-2">Top 10 most beautiful check-in spots</h5>
+                                <p class="text-secondary small">Explore photogenic places and unforgettable views
+                                    around
+                                    the world.</p>
+                                <a href="#" class="text-primary text-decoration-none small fw-semibold">See more <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                            <img src="https://picsum.photos/seed/news3/800/550" class="card-img-top object-fit-cover"
+                                style="height: 210px;" alt="Travel story placeholder">
+                            <div class="card-body p-4">
+                                <small class="text-secondary"><i class="bi bi-calendar3"></i> February 20,
+                                    2026</small>
+                                <h5 class="fw-bold mt-2">Top 5 newest services at Navagio Beach</h5>
+                                <p class="text-secondary small">Get inspired by new travel ideas and beautiful
+                                    destinations.</p>
+                                <a href="#" class="text-primary text-decoration-none small fw-semibold">See more <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TESTIMONIALS ==================== -->
+        <section class="position-relative py-5 overflow-hidden">
+            <img src="https://picsum.photos/seed/travelia-testimonials/1600/900"
+                class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Resort placeholder">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75"></div>
+
+            <div class="container position-relative text-white py-lg-5">
+                <div class="mb-4">
+                    <p class="text-info fw-semibold mb-1">TRAVELERS SAY</p>
+                    <h2 class="fw-bold">Testimonials</h2>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card border-0 rounded-4 h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center"
+                                        style="width:48px;height:48px;">S</div>
+                                    <div>
+                                        <h6 class="mb-0">Sebastian</h6>
+                                        <small class="text-secondary">Graphic Designer</small>
+                                    </div>
+                                </div>
+                                <div class="text-warning mb-2">★★★★★</div>
+                                <p class="small text-secondary mb-0">
+                                    Travelia made planning our trip simple and enjoyable.
+                                    Everything felt easy to discover.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0 rounded-4 h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center"
+                                        style="width:48px;height:48px;">E</div>
+                                    <div>
+                                        <h6 class="mb-0">Evangeline</h6>
+                                        <small class="text-secondary">Model</small>
+                                    </div>
+                                </div>
+                                <div class="text-warning mb-2">★★★★★</div>
+                                <p class="small text-secondary mb-0">
+                                    Beautiful destinations, simple navigation and lots of
+                                    inspiration for our next holiday.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0 rounded-4 h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center"
+                                        style="width:48px;height:48px;">A</div>
+                                    <div>
+                                        <h6 class="mb-0">Alexander</h6>
+                                        <small class="text-secondary">Engineer</small>
+                                    </div>
+                                </div>
+                                <div class="text-warning mb-2">★★★★★</div>
+                                <p class="small text-secondary mb-0">
+                                    A clean travel experience that helped us discover
+                                    places we had never considered.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SPECIAL OFFER ==================== -->
+        <section class="py-5 ">
+            <div class="container">
+                <div class="row g-0 overflow-hidden rounded-4 bg-body-tertiary shadow">
+                    <div class="col-12 col-md-5">
+                        <img src="https://picsum.photos/seed/travelia-offer/900/700"
+                            class="img-fluid w-100 h-100 object-fit-cover" alt="Special offer placeholder">
+                    </div>
+                    <div class="col-12 col-md-7 d-flex align-items-center">
+                        <div class="p-4 p-lg-5 w-100">
+                            <p class="text-primary fw-semibold mb-2">SPECIAL OFFER</p>
+                            <h2 class="fw-bold">Get special offers,<br>and more from travelworld</h2>
+                            <p class="text-secondary">Subscribe for travel inspiration and special updates.</p>
+
+                            <div class="input-group mt-4">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                                <button class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class=" text-white pt-5">
+        <div class="container pb-5">
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+
+                <div class="col">
+                    <h6 class="fw-bold">Support</h6>
+                    <ul class="list-unstyled small text-secondary">
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Help Center</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Safety
+                                Information</a>
+                        </li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Cancellation</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h6 class="fw-bold">Company</h6>
+                    <ul class="list-unstyled small text-secondary">
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">About us</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Privacy policy</a>
+                        </li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Community Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h6 class="fw-bold">Contact</h6>
+                    <ul class="list-unstyled small text-secondary">
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Get in touch</a>
+                        </li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Partnerships</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h6 class="fw-bold">Social</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div
+                class="border-top border-secondary mt-4 pt-4 d-flex flex-column flex-md-row justify-content-between gap-3">
+                <small class="text-secondary">© 2026 Travelia. All rights reserved.</small>
+                <div class="d-flex gap-2 text-secondary">
+                    <i class="bi bi-credit-card"></i>
+                    <i class="bi bi-credit-card-2-front"></i>
+                    <i class="bi bi-wallet2"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
