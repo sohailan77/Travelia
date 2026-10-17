@@ -16,12 +16,18 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
 
     <header class="position-absolute top-0 start-0 end-0 z-3">
         <nav class="navbar navbar-expand-lg navbar-dark py-3">
+
+            <!-- Header brand logo  -->
             <div class="container">
                 <a class="navbar-brand fw-bold fs-4" href="#">
                     <img src="Images/Travelia_logo.png" alt="logo" width="150px">
@@ -33,9 +39,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!-- Nav links  -->
                 <div class="collapse navbar-collapse" id="traveliaNav">
                     <ul class="navbar-nav ms-auto gap-lg-3 text-center">
-                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
                         <li class="nav-item"><a class="nav-link" href="#explore">Explore</a></li>
                         <li class="nav-item"><a class="nav-link" href="#stories">News</a></li>
@@ -90,52 +97,81 @@
 
             <!-- Search Box -->
             <div class="position-absolute start-50 translate-middle-x
-                w-100 px-3 z-3" style="top: 65%;">
+                   w-100 px-3 z-3" style="top: 65%;">
 
                 <div class="container">
 
                     <div class="bg-white rounded-4 shadow p-2">
 
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5
-                            g-0 align-items-center">
+                        <div class="row g-0 align-items-center">
 
-                            <div class="col px-3 py-2 border-bottom">
-                                <div class="fw-semibold small">
-                                    Location
+                            <!-- Address -->
+                            <div class="col-12 col-sm-6 col-lg px-3 py-2 d-flex align-items-center">
+                                <i class="bi bi-geo-alt m-3"></i>
+                                <div>
+
+                                    <div class="fw-semibold small">
+                                        Location
+                                    </div>
+
+                                    <small class="text-secondary">
+                                        Add destination
+                                    </small>
                                 </div>
-                                <small class="text-secondary">
-                                    Add destination
-                                </small>
                             </div>
 
-                            <div class="col px-3 py-2 border-bottom">
-                                <div class="fw-semibold small">
-                                    Check in
+
+                            <!-- Check in -->
+                            <!-- Location -->
+                            <div class="col-12 col-sm-6 col-lg px-3 py-2 d-flex align-items-center">
+                                <i class="bi bi-calendar3 m-3"></i>
+                                <div>
+
+                                    <div class="fw-semibold small">
+                                        Check in
+                                    </div>
+
+                                    <small class="text-secondary">
+                                        Add dates
+                                    </small>
                                 </div>
-                                <small class="text-secondary">
-                                    Add dates
-                                </small>
                             </div>
 
-                            <div class="col px-3 py-2 border-bottom">
-                                <div class="fw-semibold small">
-                                    Check out
+
+                            <!-- Check out -->
+                            <!-- Location -->
+                            <div class="col-12 col-sm-6 col-lg px-3 py-2 d-flex align-items-center">
+                                <i class="bi bi-calendar3 m-3"></i>
+                                <div>
+                                    <div class="fw-semibold small">
+                                        Check out
+                                    </div>
+
+                                    <small class="text-secondary">
+                                        Add dates
+                                    </small>
                                 </div>
-                                <small class="text-secondary">
-                                    Add dates
-                                </small>
                             </div>
 
-                            <div class="col px-3 py-2 border-bottom">
-                                <div class="fw-semibold small">
-                                    Guests
+                            <!-- Guests -->
+                            <!-- Location -->
+                            <div class="col-12 col-sm-6 col-lg px-3 py-2 d-flex align-items-center">
+                                <i class="bi bi-people m-3"></i>
+                                <div>
+
+                                    <div class="fw-semibold small">
+                                        Guests
+                                    </div>
+
+                                    <small class="text-secondary">
+                                        Add guests
+                                    </small>
                                 </div>
-                                <small class="text-secondary">
-                                    Add guests
-                                </small>
                             </div>
 
-                            <div class="col d-flex justify-content-center p-2">
+                            <!-- Search Button -->
+
+                            <div class="col-12 col-lg-auto d-flex justify-content-center justify-content-lg-end p-22">
                                 <button class="btn btn-primary rounded-circle p-3" aria-label="Search">
                                     <i class="bi bi-search"></i>
                                 </button>
@@ -143,119 +179,19 @@
 
                         </div>
 
+
+
                     </div>
 
                 </div>
+
+            </div>
 
             </div>
 
         </section>
 
-        <!-- <section class="position-relative min-vh-100 d-flex align-items-center overflow-hidden">
-            <img src="Images/hero-bg.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-                alt="Travel destination placeholder">
 
-            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
-
-            Search box
-            <div class="position-absolute top-50 start-50 translate-middle w-100 px-3 z-3 mt-4">
-                <div class="container">
-                    <div class="bg-white rounded-4 shadow p-2">
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-0 align-items-center">
-
-                            <div class="col px-3 py-2 border-bottom border-lg-0 border-end-lg">
-                                <div class="fw-semibold small">Location</div>
-                                <small class="text-secondary">Add destination</small>
-                            </div>
-
-                            <div class="col px-3 py-2 border-bottom border-lg-0 border-end-lg">
-                                <div class="fw-semibold small">Check in</div>
-                                <small class="text-secondary">Add dates</small>
-                            </div>
-
-                            <div class="col px-3 py-2 border-bottom border-lg-0 border-end-lg">
-                                <div class="fw-semibold small">Check out</div>
-                                <small class="text-secondary">Add dates</small>
-                            </div>
-
-                            <div class="col px-3 py-2 border-bottom border-lg-0 border-end-lg">
-                                <div class="fw-semibold small">Guests</div>
-                                <small class="text-secondary">Add guests</small>
-                            </div>
-
-                            <div class="col d-flex justify-content-center p-2">
-                                <button class="btn btn-primary rounded-circle p-3" aria-label="Search">
-                                    <i class="bi bi-search"></i>
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- ==================== WHY CHOOSE US ==================== -->
-        <section class="py-5  text-white" id="about">
-            <div class="container py-lg-5">
-                <div class="text-center mb-5">
-                    <p class="text-primary fw-semibold mb-2">WHY CHOOSE US?</p>
-                    <h2 class="fw-bold">Travel made simple</h2>
-                </div>
-
-                <div class="row g-4 text-center">
-                    <div class="col-12 col-md-4">
-                        <div class="p-4 h-100">
-                            <div class="bg-white text-primary rounded-3 d-inline-flex p-3 mb-3">
-                                <i class="bi bi-currency-dollar fs-4"></i>
-                            </div>
-                            <h5>Best Price</h5>
-                            <p class="text-secondary mb-0">
-                                Find great travel options with prices that fit your journey.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-4">
-                        <div class="p-4 h-100">
-                            <div class="bg-white text-primary rounded-3 d-inline-flex p-3 mb-3">
-                                <i class="bi bi-shield-check fs-4"></i>
-                            </div>
-                            <h5>Trusted Service</h5>
-                            <p class="text-secondary mb-0">
-                                Plan your trip with reliable information and simple tools.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-4">
-                        <div class="p-4 h-100">
-                            <div class="bg-white text-primary rounded-3 d-inline-flex p-3 mb-3">
-                                <i class="bi bi-globe2 fs-4"></i>
-                            </div>
-                            <h5>Worldwide Places</h5>
-                            <p class="text-secondary mb-0">
-                                Explore destinations and experiences from around the world.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Partners -->
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6
-            g-4 align-items-center justify-content-center
-            mt-4 pt-4 border-top border-secondary">
-
-                    <div class="col text-center text-secondary fw-semibold">GoTravel</div>
-                    <div class="col text-center text-secondary fw-semibold">TravelPro</div>
-                    <div class="col text-center text-secondary fw-semibold">Holiday</div>
-                    <div class="col text-center text-secondary fw-semibold">AirWay</div>
-                    <div class="col text-center text-secondary fw-semibold">The North</div>
-                    <div class="col text-center text-secondary fw-semibold">TravelHub</div>
-
-                </div>
-            </div>
-        </section>
 
         <!-- ==================== TOP BOOK NOW ==================== -->
         <section class="py-5  text-white" id="packages">
@@ -275,9 +211,8 @@
                     <!-- Card 1 -->
                     <div class="col">
                         <div class="card text-white border-secondary h-100 rounded-4 overflow-hidden">
-                            <img src="https://picsum.photos/seed/travelia-card1/700/500"
-                                class="card-img-top object-fit-cover" style="height: 190px;"
-                                alt="Travel stay placeholder">
+                            <img src="Images/package-img-1.png" class="card-img-top object-fit-cover"
+                                style="height: 190px;" alt="Travel stay placeholder">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="card-title">Azure Haven</h6>
@@ -286,16 +221,16 @@
                                 <p class="card-text text-secondary small">
                                     <i class="bi bi-geo-alt"></i> Maldives
                                 </p>
-                                <strong>$240 <small class="text-secondary fw-normal">/ night</small></strong>
+                                <strong class="text-secondary">$240 <small class="text-secondary fw-normal">/
+                                        night</small></strong>
                             </div>
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="card  text-white border-secondary h-100 rounded-4 overflow-hidden">
-                            <img src="https://picsum.photos/seed/travelia-card2/700/500"
-                                class="card-img-top object-fit-cover" style="height: 190px;"
-                                alt="Travel stay placeholder">
+                            <img src="Images/package-img-2.png" class="card-img-top object-fit-cover"
+                                style="height: 190px;" alt="Travel stay placeholder">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="card-title">Palm Residence</h6>
@@ -311,9 +246,8 @@
 
                     <div class="col">
                         <div class="card  text-white border-secondary h-100 rounded-4 overflow-hidden">
-                            <img src="https://picsum.photos/seed/travelia-card3/700/500"
-                                class="card-img-top object-fit-cover" style="height: 190px;"
-                                alt="Travel stay placeholder">
+                            <img src="Images/package-img-3.png" class="card-img-top object-fit-cover"
+                                style="height: 190px;" alt="Travel stay placeholder">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="card-title">Ocean Villa</h6>
@@ -329,9 +263,8 @@
 
                     <div class="col">
                         <div class="card  text-white border-secondary h-100 rounded-4 overflow-hidden">
-                            <img src="https://picsum.photos/seed/travelia-card4/700/500"
-                                class="card-img-top object-fit-cover" style="height: 190px;"
-                                alt="Travel stay placeholder">
+                            <img src="Images/package-img-4.png" class="card-img-top object-fit-cover"
+                                style="height: 190px;" alt="Travel stay placeholder">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="card-title">Blue Lagoon</h6>
@@ -347,9 +280,8 @@
 
                     <div class="col">
                         <div class="card  text-white border-secondary h-100 rounded-4 overflow-hidden">
-                            <img src="https://picsum.photos/seed/travelia-card5/700/500"
-                                class="card-img-top object-fit-cover" style="height: 190px;"
-                                alt="Travel stay placeholder">
+                            <img src="Images/package-img-5.png" class="card-img-top object-fit-cover"
+                                style="height: 190px;" alt="Travel stay placeholder">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="card-title">Tropical House</h6>
@@ -365,9 +297,8 @@
 
                     <div class="col">
                         <div class="card  text-white border-secondary h-100 rounded-4 overflow-hidden">
-                            <img src="https://picsum.photos/seed/travelia-card6/700/500"
-                                class="card-img-top object-fit-cover" style="height: 190px;"
-                                alt="Travel stay placeholder">
+                            <img src="Images/package-img-6.png" class="card-img-top object-fit-cover"
+                                style="height: 190px;" alt="Travel stay placeholder">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="card-title">Garden Villa</h6>
@@ -383,9 +314,8 @@
 
                     <div class="col">
                         <div class="card  text-white border-secondary h-100 rounded-4 overflow-hidden">
-                            <img src="https://picsum.photos/seed/travelia-card7/700/500"
-                                class="card-img-top object-fit-cover" style="height: 190px;"
-                                alt="Travel stay placeholder">
+                            <img src="Images/package-img-7.png" class="card-img-top object-fit-cover"
+                                style="height: 190px;" alt="Travel stay placeholder">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="card-title">Modern Escape</h6>
@@ -401,9 +331,8 @@
 
                     <div class="col">
                         <div class="card  text-white border-secondary h-100 rounded-4 overflow-hidden">
-                            <img src="https://picsum.photos/seed/travelia-card8/700/500"
-                                class="card-img-top object-fit-cover" style="height: 190px;"
-                                alt="Travel stay placeholder">
+                            <img src="Images/package-img-8.png" class="card-img-top object-fit-cover"
+                                style="height: 190px;" alt="Travel stay placeholder">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="card-title">Island Retreat</h6>
@@ -426,9 +355,10 @@
             </div>
         </section>
 
+
         <!-- ==================== EXPLORE ==================== -->
         <section class="position-relative py-5 overflow-hidden" id="explore">
-            <img src="https://picsum.photos/seed/travelia-explore/1600/900"
+            <img src="Images/explore-maldives-img.png"
                 class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Destination placeholder">
             <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75"></div>
 
@@ -450,21 +380,18 @@
                     <div class="col-12 col-lg-6">
                         <div class="row row-cols-3 g-2">
                             <div class="col">
-                                <img src="https://picsum.photos/seed/maldives1/500/650"
-                                    class="img-fluid rounded-3 object-fit-cover w-100" style="height: 190px;"
-                                    alt="Destination placeholder">
+                                <img src="Images/explore-img1.png" class="img-fluid rounded-3 object-fit-cover w-100"
+                                    style="height: 190px;" alt="Destination placeholder">
                                 <small class="d-block text-center mt-2">Azure Haven</small>
                             </div>
                             <div class="col">
-                                <img src="https://picsum.photos/seed/maldives2/500/650"
-                                    class="img-fluid rounded-3 object-fit-cover w-100" style="height: 190px;"
-                                    alt="Destination placeholder">
+                                <img src="Images/explore-img2.png" class="img-fluid rounded-3 object-fit-cover w-100"
+                                    style="height: 190px;" alt="Destination placeholder">
                                 <small class="d-block text-center mt-2">Serene Sanctuary</small>
                             </div>
                             <div class="col">
-                                <img src="https://picsum.photos/seed/maldives3/500/650"
-                                    class="img-fluid rounded-3 object-fit-cover w-100" style="height: 190px;"
-                                    alt="Destination placeholder">
+                                <img src="Images/explore-img3.png" class="img-fluid rounded-3 object-fit-cover w-100"
+                                    style="height: 190px;" alt="Destination placeholder">
                                 <small class="d-block text-center mt-2">Verdant Vista</small>
                             </div>
                         </div>
@@ -490,7 +417,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <article class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-                            <img src="https://picsum.photos/seed/news1/800/550" class="card-img-top object-fit-cover"
+                            <img src="Images/news-img-1.png" class="card-img-top object-fit-cover"
                                 style="height: 210px;" alt="Travel story placeholder">
                             <div class="card-body p-4">
                                 <small class="text-secondary"><i class="bi bi-calendar3"></i> February 20,
@@ -507,7 +434,7 @@
 
                     <div class="col">
                         <article class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-                            <img src="https://picsum.photos/seed/news2/800/550" class="card-img-top object-fit-cover"
+                            <img src="Images/news-img-2.png" class="card-img-top object-fit-cover"
                                 style="height: 210px;" alt="Travel story placeholder">
                             <div class="card-body p-4">
                                 <small class="text-secondary"><i class="bi bi-calendar3"></i> February 20,
@@ -524,7 +451,7 @@
 
                     <div class="col">
                         <article class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-                            <img src="https://picsum.photos/seed/news3/800/550" class="card-img-top object-fit-cover"
+                            <img src="Images/news-img-3.png" class="card-img-top object-fit-cover"
                                 style="height: 210px;" alt="Travel story placeholder">
                             <div class="card-body p-4">
                                 <small class="text-secondary"><i class="bi bi-calendar3"></i> February 20,
@@ -542,78 +469,103 @@
         </section>
 
         <!-- ==================== TESTIMONIALS ==================== -->
-        <section class="position-relative py-5 overflow-hidden">
-            <img src="https://picsum.photos/seed/travelia-testimonials/1600/900"
-                class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Resort placeholder">
-            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75"></div>
-
-            <div class="container position-relative text-white py-lg-5">
-                <div class="mb-4">
-                    <p class="text-info fw-semibold mb-1">TRAVELERS SAY</p>
-                    <h2 class="fw-bold">Testimonials</h2>
-                </div>
+        <section class="py-5">
+            <div class="container py-lg-5">
 
                 <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <!-- Testimonial 1 -->
                     <div class="col">
-                        <div class="card border-0 rounded-4 h-100">
-                            <div class="card-body p-4">
-                                <div class="d-flex align-items-center gap-3 mb-3">
-                                    <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center"
-                                        style="width:48px;height:48px;">S</div>
-                                    <div>
-                                        <h6 class="mb-0">Sebastian</h6>
-                                        <small class="text-secondary">Graphic Designer</small>
-                                    </div>
+                        <div class="position-relative bg-white rounded-4 shadow p-4 pt-5 mt-4">
+
+                            <!-- Profile Image -->
+                            <img src="Images/traveler-img1.png" class="position-absolute top-0 start-0 translate-middle-y
+                               rounded-circle border border-4 border-white" width="64" height="64" alt="Sebastian">
+
+                            <div class="d-flex justify-content-between align-items-start">
+
+                                <div>
+                                    <h6 class="fw-bold mb-1">Sebastian</h6>
+                                    <small class="text-dark">Graphic design</small>
                                 </div>
-                                <div class="text-warning mb-2">★★★★★</div>
-                                <p class="small text-secondary mb-0">
-                                    Travelia made planning our trip simple and enjoyable.
-                                    Everything felt easy to discover.
-                                </p>
+
+                                <div class="text-warning">
+                                    ★★★★★
+                                </div>
+
                             </div>
+
+                            <p class="small mt-4 mb-0 text-dark">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text.
+                            </p>
+
                         </div>
                     </div>
 
+
+                    <!-- Testimonial 2 -->
                     <div class="col">
-                        <div class="card border-0 rounded-4 h-100">
-                            <div class="card-body p-4">
-                                <div class="d-flex align-items-center gap-3 mb-3">
-                                    <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center"
-                                        style="width:48px;height:48px;">E</div>
-                                    <div>
-                                        <h6 class="mb-0">Evangeline</h6>
-                                        <small class="text-secondary">Model</small>
-                                    </div>
+                        <div class="position-relative bg-white rounded-4 shadow p-4 pt-5 mt-4">
+
+                            <img src="Images/traveler-img2.png" class="position-absolute top-0 start-0 translate-middle-y
+                               rounded-circle border border-4 border-white" width="64" height="64" alt="Evangeline">
+
+                            <div class="d-flex justify-content-between align-items-start">
+
+                                <div>
+                                    <h6 class="fw-bold mb-1">Evangeline</h6>
+                                    <small class="text-dark">Model</small>
                                 </div>
-                                <div class="text-warning mb-2">★★★★★</div>
-                                <p class="small text-secondary mb-0">
-                                    Beautiful destinations, simple navigation and lots of
-                                    inspiration for our next holiday.
-                                </p>
+
+                                <div class="text-warning">
+                                    ★★★★★
+                                </div>
+
                             </div>
+
+                            <p class="small mt-4 mb-0 text-dark">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text.
+                            </p>
+
                         </div>
                     </div>
 
+
+                    <!-- Testimonial 3 -->
                     <div class="col">
-                        <div class="card border-0 rounded-4 h-100">
-                            <div class="card-body p-4">
-                                <div class="d-flex align-items-center gap-3 mb-3">
-                                    <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center"
-                                        style="width:48px;height:48px;">A</div>
-                                    <div>
-                                        <h6 class="mb-0">Alexander</h6>
-                                        <small class="text-secondary">Engineer</small>
-                                    </div>
+                        <div class="position-relative bg-white rounded-4 shadow p-4 pt-5 mt-4">
+
+                            <img src="Images/traveler-img3.png" class="position-absolute top-0 start-0 translate-middle-y
+                               rounded-circle border border-4 border-white" width="64" height="64" alt="Alexander">
+
+                            <div class="d-flex justify-content-between align-items-start">
+
+                                <div>
+                                    <h6 class="fw-bold mb-1">Alexander</h6>
+                                    <small class="text-dark">Software engineer</small>
                                 </div>
-                                <div class="text-warning mb-2">★★★★★</div>
-                                <p class="small text-secondary mb-0">
-                                    A clean travel experience that helped us discover
-                                    places we had never considered.
-                                </p>
+
+                                <div class="text-warning">
+                                    ★★★★★
+                                </div>
+
                             </div>
+
+                            <p class="small mt-4 mb-0 text-dark">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text.
+                            </p>
+
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </section>
 
@@ -622,8 +574,8 @@
             <div class="container">
                 <div class="row g-0 overflow-hidden rounded-4 bg-body-tertiary shadow">
                     <div class="col-12 col-md-5">
-                        <img src="https://picsum.photos/seed/travelia-offer/900/700"
-                            class="img-fluid w-100 h-100 object-fit-cover" alt="Special offer placeholder">
+                        <img src="Images/offer-img.png" class="img-fluid w-100 h-100 object-fit-cover"
+                            alt="Special offer placeholder">
                     </div>
                     <div class="col-12 col-md-7 d-flex align-items-center">
                         <div class="p-4 p-lg-5 w-100">
@@ -641,37 +593,117 @@
             </div>
         </section>
 
+        <!-- ==================== WHY CHOOSE US ==================== -->
+        <section class="py-5  text-white" id="about">
+            <div class="container py-lg-5">
+                <div class="text-center mb-5">
+                    <p class="text-primary fw-semibold mb-2">WHY CHOOSE US?</p>
+                    <h2 class="fw-bold">Travel made simple</h2>
+                </div>
+
+                <div class="row g-4 text-center">
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 h-100">
+                            <div class="d-inline-flex p-3 mb-3">
+                                <img src="Images/dollar-circle.png" alt="">
+                            </div>
+                            <h5>Best Price</h5>
+                            <p class="text-secondary mb-0">
+                                Find great travel options with prices that fit your journey.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 h-100">
+                            <div class="d-inline-flex p-3 mb-3">
+                                <img src="Images/security-user.png" alt="">
+                            </div>
+                            <h5>Trusted Service</h5>
+                            <p class="text-secondary mb-0">
+                                Plan your trip with reliable information and simple tools.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 h-100">
+                            <div class="d-inline-flex p-3 mb-3">
+                                <img src="Images/refresh-right-square.png" alt="">
+                            </div>
+                            <h5>Worldwide Places</h5>
+                            <p class="text-secondary mb-0">
+                                Explore destinations and experiences from around the world.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partners -->
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6
+            g-4 align-items-center justify-content-center
+            mt-4 pt-4 border-top border-secondary">
+
+                    <div class="col text-center text-secondary fw-semibold">
+                        <img src="Images/partner-img-1.png" alt="">
+                        GoTravel
+                    </div>
+                    <div class="col text-center text-secondary fw-semibold">
+                        <img src="Images/partner-img-2.png" alt="">
+                        TravelPro
+                    </div>
+                    <div class="col text-center text-secondary fw-semibold">
+                        <img src="Images/partner-img-3.png" alt="">
+                        Holiday
+                    </div>
+                    <div class="col text-center text-secondary fw-semibold">
+                        <img src="Images/partner-img-4.png" alt="">
+                        AirWay
+                    </div>
+                    <div class="col text-center text-secondary fw-semibold">
+                        <img src="Images/partner-img-5.png" alt="">
+                        The North
+                    </div>
+                    <div class="col text-center text-secondary fw-semibold">
+                        <img src="Images/partner-img-6.png" alt="">
+                        TravelHub
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- ==================== FOOTER ==================== -->
-    <footer class=" text-white pt-5">
+    <footer class=" text-white bg-black pt-5">
         <div class="container pb-5">
-            <div class="row row-cols-2 row-cols-md-4 g-4">
+            <div class="d-flex flex-wrap gap-5 justify-content-between">
 
-                <div class="col">
-                    <h6 class="fw-bold">Support</h6>
+                <div class="">
+                    <h6 class="fw-bold mb-3">Support</h6>
                     <ul class="list-unstyled small text-secondary">
                         <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Help Center</a>
                         </li>
-                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Safety
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Safety<br>
                                 Information</a>
                         </li>
                         <li><a href="#" class="text-secondary text-decoration-none">Cancellation</a></li>
                     </ul>
                 </div>
 
-                <div class="col">
-                    <h6 class="fw-bold">Company</h6>
+                <div class="">
+                    <h6 class="fw-bold mb-3">Company</h6>
                     <ul class="list-unstyled small text-secondary">
                         <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">About us</a></li>
                         <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Privacy policy</a>
                         </li>
-                        <li><a href="#" class="text-secondary text-decoration-none">Community Blog</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Community <br> Blog</a></li>
                     </ul>
                 </div>
 
-                <div class="col">
-                    <h6 class="fw-bold">Contact</h6>
+                <div class="">
+                    <h6 class="fw-bold mb-3">Contact</h6>
                     <ul class="list-unstyled small text-secondary">
                         <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">FAQ</a></li>
                         <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Get in touch</a>
@@ -680,8 +712,8 @@
                     </ul>
                 </div>
 
-                <div class="col">
-                    <h6 class="fw-bold">Social</h6>
+                <div class="">
+                    <h6 class="fw-bold mb-3">Social</h6>
                     <div class="d-flex gap-3">
                         <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
@@ -695,10 +727,8 @@
             <div
                 class="border-top border-secondary mt-4 pt-4 d-flex flex-column flex-md-row justify-content-between gap-3">
                 <small class="text-secondary">© 2026 Travelia. All rights reserved.</small>
-                <div class="d-flex gap-2 text-secondary">
-                    <i class="bi bi-credit-card"></i>
-                    <i class="bi bi-credit-card-2-front"></i>
-                    <i class="bi bi-wallet2"></i>
+                <div class="d-flex gap-2 text-secondary justify-content-end">
+                    <img src="Images/image 4.png" alt="" width="50%">
                 </div>
             </div>
         </div>
