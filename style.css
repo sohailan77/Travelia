@@ -1,0 +1,67 @@
+/* Variables  */
+
+:root {
+  --main-text-color: #ffffff;
+  --primary-text-color: #1a1a1a;
+  --secondary-text-color: #8c8c8c;
+  --search-icon-bgcolor: #008ec4;
+  --color-primary: #008395;
+  --color-primary-light: #ebf9ff;
+  --icons-color: #8c8c8c;
+  --footer-title-color: #f2f2f2;
+  --footer-text-color: #bfbfbf;
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+ 
+* {
+}
+.navbar-brand img {
+  width: 40vmin;
+  max-width: 200px;
+}
+nav ul .nav-link {
+  color: var(--main-text-color);
+    font-family: var(--font-primary);
+
+}
+
+/* search box  */
+
+.search-box-container {
+  border-radius: 40px;
+}
+
+.search-box i {
+  font-size: 1.8rem;
+}
+
+.search-btn {
+  background-color: var(--search-icon-bgcolor);
+  border: none;
+  color: #ffffff;
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+/* main  */
+
+.search-title {
+    color: var(--primary-text-color);
+    font-family: var(--font-primary);
+    font-weight: 700;
+}
+
+
+.search-details {
+    color: var(--secondary-text-color);
+    font-family: var(--font-primary);
+
+}
